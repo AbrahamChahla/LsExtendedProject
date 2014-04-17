@@ -31,7 +31,7 @@ First time thru the tutorial it may still take you 15 minutes.  So give it a try
 19. Select the Full Dependencies option, press the Add button
 20. Close the web.config that gets automatically loaded
 21. In the App_Start folder, open RouteConfig.cs
-22. Add the following line under the other IgnoreRoutes
+22. Add the following line under the other IgnoreRoutes<br/>
 		routes.IgnoreRoute("{*allsvc}", new { allsvc = @".*\.svc(/.*)?" });
 23. Right click on the App_Start folder, add a new Class file
 24. Name it WebApiConfig.cs
