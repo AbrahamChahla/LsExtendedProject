@@ -1,11 +1,11 @@
 LsExtendedProject
 ==========================
 
-<em>This process requires the March 2014 Update</em>
-
-How to add Web API and MVC to a LightSwitch 2013 project
+<em><strong>This process requires the March 2014 Update</strong></em>
 
 <em>I'm happy to report that the March 2014 Update brought back SCAFFOLDING!!  Yay!</em>
+
+How to add Web API and MVC to a LightSwitch 2013 project
 
 Visual Studio LightSwitch is a great product. But it's not the end all and most professional development projects require a mix of technologies to be considered successful. By following these steps, you'll end up with a LightSwitch project that has the HTML Client, Silverlight Client, MVC, Web API and Web Forms with the naming conventions of your choosing. Giving you a solution without restrictions!
 
@@ -31,7 +31,8 @@ First time thru the tutorial it may still take you 15 minutes.  So give it a try
 19. Select the Full Dependencies option, press the Add button
 20. Close the web.config that gets automatically loaded
 21. In the App_Start folder, open RouteConfig.cs
-22. Add the following line under the other IgnoreRoutesroutes.IgnoreRoute("{*allsvc}", new { allsvc = @".*\.svc(/.*)?" });
+22. Add the following line under the other IgnoreRoutes
+		routes.IgnoreRoute("{*allsvc}", new { allsvc = @".*\.svc(/.*)?" });
 23. Right click on the App_Start folder, add a new Class file
 24. Name it WebApiConfig.cs
 25. Replace the contents with the contents from the WebApiConfig.cs file from our zip file
@@ -55,19 +56,19 @@ First time thru the tutorial it may still take you 15 minutes.  So give it a try
 41. Do a full save, then rebuild, run your app
 
 
-Your LightSwitch html app will run first with your custom URL path
+Your LightSwitch html app will run first with your custom URL path<br/>
 <a href="http://localhost:{port}/App">http://localhost:{port}/App</a>
 
-Moving on, let's test access to the ApplicationData.svc file
+Moving on, let's test access to the ApplicationData.svc file<br/>
 <a href="http://localhost:{port}/ApplicationData.svc">http://localhost:{port}/ApplicationData.svc</a>
 
-So far so good eh? How about our MVC?
+So far so good eh? How about our MVC?<br/>
 <a href="http://localhost:{port}/Home">http://localhost:{port}/Home</a>
 
-Yay! Looking good… now our default.aspx file in the root…
+Yay! Looking good… now our default.aspx file in the root…<br/>
 <a href="http://localhost:{port}/default.aspx">http://localhost:{port}/default.aspx</a>
 
-Yep that works too… final test… the Web.Api side…
+Yep that works too… final test… the Web.Api side…<br/>
 <a href="http://localhost:{port}/api/Test">http://localhost:{port}/api/Test</a>
 
 You can now go in and clean up the project, delete the test screen, test table, etc.
